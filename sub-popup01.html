@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>중속충전기</title>
+    <link href="css/style.css" rel="stylesheet">
+    <!-- javaScript  -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/common.js"></script>
+
+</head>
+
+<body class="sub">
+    <!-- S:skip_navi -->
+    <div class="skip_navi"> <a class="sr-only sr-only-focusable" href="#header">헤더 바로가기</a> <a class="sr-only sr-only-focusable" href="#content">본문 바로가기</a> <a class="sr-only sr-only-focusable" href="#footer">푸터 바로가기</a> </div>
+    <!-- E:skip_navi -->
+    <!-- S:header -->
+    <header id="header">
+        <h1 class="sr-only"><a href="/">중속충전기</a></h1>
+        <h2><a href="/">충전기정보</a></h2>
+        <button class="back" herf="">뒤로가기<i class="fi icon-back"></i></button>
+        <button class="menu" herf="">메뉴열기<i class="fi icon-menu"></i></button>
+    </header>
+    <nav id="sub-menu">
+        <ul>
+            <li><a href="">로그인</a></li>
+            <li><a href="">카드관리</a></li>
+            <li><a class="active" href="">충전기정보</a></li>
+            <li><a href="">이력조회</a></li>
+            <li><a href="">알림</a></li>
+            <li><a href="">회원가입</a></li>
+            <li><a href="">서비스관리</a></li>
+            <li><a href="">전기차소식</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">공지사항</a></li>
+            <li><a href="">도움말</a></li>
+        </ul>
+        <button class="close" herf="">메뉴닫기<i class="fi icon-close"></i></button>
+    </nav>
+    <!-- E:header -->
+    <!-- S:content -->
+    <article id="content">
+
+      <center>
+            <p><a class="pop-btn" data="pop01">충전기정보 열려라!</a></p>
+            <p><a class="pop-btn" data="pop02">충전기관리 열려라!</a></p>
+      </center>
+
+
+
+      <div id="pop01" class="popup">
+        <h5>충전기 정보</h5>
+        <h6>충전기ID <strong>453421</strong></h6>
+
+
+        <ul class="pop-info">
+            <li>
+                <h7>채널ID <strong>1번 충전기</strong></h7>
+                <i>시작시간 <strong>2017.03.06 12:00:00</strong></i>
+                <i>종료시간 <strong>2017.03.06 12:00:00</strong></i>
+                <p class="stat standby">대기중</p>
+                <button class="admin">관리</button>
+            </li>
+            <li>
+                <h7>채널ID <strong>1번 충전기</strong></h7>
+                <i>시작시간 <strong>2017.03.06 12:00:00</strong></i>
+                <i>종료시간 <strong>2017.03.06 12:00:00</strong></i>
+                <p class="stat ing">충전중</p>
+                <button class="admin">관리</button>
+            </li>
+            <li>
+                <h7>채널ID <strong>1번 충전기</strong></h7>
+                <i>시작시간 <strong>2017.03.06 12:00:00</strong></i>
+                <i>종료시간 <strong>2017.03.06 12:00:00</strong></i>
+                <p class="stat complete">완료</p>
+                <button class="admin">관리</button>
+            </li>
+            <li>
+                <h7>채널ID <strong>1번 충전기</strong></h7>
+                <i>시작시간 <strong>2017.03.06 12:00:00</strong></i>
+                <i>종료시간 <strong>2017.03.06 12:00:00</strong></i>
+                <p class="stat complete">완료</p>
+                <button class="admin">관리</button>
+            </li>
+            <li>
+                <h7>채널ID <strong>1번 충전기</strong></h7>
+                <i>시작시간 <strong>2017.03.06 12:00:00</strong></i>
+                <i>종료시간 <strong>2017.03.06 12:00:00</strong></i>
+                <p class="stat ing">충전중</p>
+                <button class="admin">관리</button>
+            </li>
+            <li>
+                <h7>채널ID <strong>1번 충전기</strong></h7>
+                <i>시작시간 <strong>2017.03.06 12:00:00</strong></i>
+                <i>종료시간 <strong>2017.03.06 12:00:00</strong></i>
+                <p class="stat complete">완료</p>
+                <button class="admin">관리</button>
+            </li>
+            <li>
+                <h7>채널ID <strong>1번 충전기</strong></h7>
+                <i>시작시간 <strong>2017.03.06 12:00:00</strong></i>
+                <i>종료시간 <strong>2017.03.06 12:00:00</strong></i>
+                <p class="stat complete">완료</p>
+                <button class="admin">관리</button>
+            </li>
+        </ul>
+
+
+        <p class="btn-set full">
+            <a class="btn sub half" href="">저장</a>
+            <a class="btn half" href="">닫기</a>
+        </p>
+
+      </div>
+
+
+
+            <div id="pop02" class="popup">
+              <h5>충전기 정보 관리</h5>
+
+
+
+                  <fieldset class="admin">
+                      <legend class="sr-only">관리정보 입력폼 입니다.</legend>
+                      <h6 class="sr-only">관리정보</h6>
+                      <dl>
+                          <dt><label for="charger-id">충전기ID</label></dt>
+                          <dd><input id="charger-id" name="charger-id" type="text" placeholder="충전기 ID를 입력하세요"></dd>
+                          <dt><label for="channel-id">채널ID</label></dt>
+                          <dd><input id="channel-id" name="channel-id" type="text" placeholder="채널ID를 입력하세요"></dd>
+
+                          <dt><label for="status">충전기상태</dt>
+                          <dd>
+                            <p class="select">
+                              <select id="status">
+                                <option>정상</option>
+                                <option>고장</option>
+                              </select>
+                              <i class="fi icon-back"></i>
+                            </p>
+
+                          </dd>
+                          <dt><label for="comment">충전기상태사유</label></dt>
+                          <dd><textarea id="comment" name="comment" type="text" placeholder="충전기상태 사유를 입력하세요"></textarea></dd>
+
+                      </dl>
+
+                                    <p class="btn-set full">
+                                        <a class="btn sub half" href="">저장</a>
+                                        <a class="btn half" href="">닫기</a>
+                                    </p>
+
+                  </fieldset>
+
+
+            </div>
+
+    </article>
+    <!-- E:content -->
+    <!-- S:footer -->
+    <footer id="footer">
+        <address>
+        </address>
+    </footer>
+    <!-- E:footer -->
+</body>
+
+</html>
